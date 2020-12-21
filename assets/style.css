@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  font-family: 'Cardo', serif;
+  font-weight: 300;
+  background-color: #7b7766;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  text-decoration: underline;
+  text-transform: lowercase;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 35px;
+  background-color: #7b7766;
+}
+
+header h1 {
+  font-size: 30;
+  margin: 0;
+  color: #272c18;
+  text-decoration: underline;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #272c18;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.25vw;
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  background-image: url('../assets/images/hero-bg.jpg');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-me {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+  background-color: #fdf5e6;
+}
+
+.about-me img {
+  width: 25%;
+  float: left;
+  margin: 45px;
+  max-width: 400px;
+}
+
+.work {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  color: #fdf5e6;
+  background-color: #000000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12 , 1fr);
+  grid-template-rows: repeat(2 , 1fr);
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(200px , 1fr);
+}
+
+.grid-item {
+  display: flex;
+  align-items: end;
+  grid-column: span 4;
+  max-width: 200px;
+}
+
+.grid-item a img {
+  max-width: 200px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap
+}
+
+.contact-me ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
