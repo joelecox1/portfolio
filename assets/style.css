@@ -5,7 +5,7 @@
 }
 
 body {
-  color: #000000;
+  color: #272c18;
   font-family: 'Cardo', serif;
   font-weight: 300;
   background-color: #7b7766;
@@ -61,12 +61,17 @@ header nav ul {
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 1.25vw;
+  font-size: 1.0vw;
   text-decoration: none;
   color: #fdf5e6;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
   
+}
+
+header nav ul li a:hover {
+  color:#272c18;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+
 }
 
 .hero {
@@ -79,19 +84,19 @@ header nav ul li a {
   background-position: center;
 }
 
+/* about me styling */
 .about-me {
   display:flex;
   justify-content: space-between;
   flex: wrap;
   align-items: center;
-  color: #000000;
+  color: #272c18;
   background-color: #fdf5e6;
   padding: 50px 50px;
 }
 
 .about-me h2 {
   flex: 0 0 20%;
-  /* align-self: center; */
   text-align: center;
 }
 
@@ -106,8 +111,10 @@ header nav ul li a {
 .about-me p {
   overflow: hidden;
   margin: 5px 0 15px 0;
+  width: 35%;
 }
 
+/* work section styling */
 .work {
   display: flex; 
   width: 100%;
@@ -116,7 +123,7 @@ header nav ul li a {
   flex-wrap: wrap;
   align-items: center;
   color: #fdf5e6;
-  background-color: #000000;
+  background-color: #272c18;
   padding: 50px 50px 50px 0;
 }
 
@@ -147,7 +154,6 @@ header nav ul li a {
   align-items: flex-end;
   grid-column: span 4;
   background-size: 100%;
-  /* background-blend-mode: overlay; */
   background-color: #fdf5e6;
   min-height: 150px;
   padding: 10px 10px;
@@ -177,30 +183,32 @@ header nav ul li a {
   opacity: 1;
 }
 
-
-
+/* contact me styling */
 .contact-me {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  margin: 0 0 0 50px;
+  /* text-align:left; */
   /* flex-wrap: wrap; */
+  padding: 50px;
 }
 
 .contact-me h2 {
-  flex: 0 0 20%;
-  align-self: center;
-  text-align: center;
+  /* flex: 0 0 20%; */
+  /* align-self: center; */
+  /* text-align: center; */
 }
 
 .contact-me ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
   list-style: none;
 }
 
 .contact-me a {
   text-decoration: none;
+  color: #272c18;
 }
