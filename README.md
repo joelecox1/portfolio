@@ -6,7 +6,7 @@ Web development professional portfolio
 
 ## Site Preview
 
-![image](images/screenshot-deployed-app.png)
+![](assets/images/screenshot-deployed-app.png)
 
 ### Link to deployed application
 
