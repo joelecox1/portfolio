@@ -292,9 +292,9 @@ header nav ul li a:hover {
 }
 
 @media screen and (max-width: 575px) {
-
   .hero {
     max-height: 0vw;
   }
 
+  
 }
