@@ -37,17 +37,21 @@ header {
 }
 
 header h1 {
-  font-size: 30;
+  font-size: 35;
   margin: 0;
   color: #272c18;
   text-decoration: underline;
-  /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
 
 header h1 a {
   text-decoration: none;
   color: #272c18;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+header h1 a:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fdf5e6;
 }
 
 header nav ul {
@@ -61,7 +65,7 @@ header nav ul {
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 1.0vw;
+  font-size: 1.25vw;
   text-decoration: none;
   color: #fdf5e6;
   text-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -101,17 +105,22 @@ header nav ul li a:hover {
 }
 
 .about-me img {
+  display: flex;
+  align-items: flex-start;
   width: 100%;
-  margin: 60px;
-  max-width: 400px;
+  margin: 60px 80px 60px 30px;
+  max-width: 1200px;
   border:rgba(0, 0, 0, 0.7);
   
 }
 
 .about-me p {
-  overflow: hidden;
-  margin: 5px 0 15px 0;
-  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 60px;
+  width: 100%;
 }
 
 /* work section styling */
@@ -138,6 +147,11 @@ header nav ul li a:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
+.work h3:hover {
+  color: #fdf5e6;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12 , 1fr);
@@ -155,14 +169,14 @@ header nav ul li a:hover {
   grid-column: span 4;
   background-size: 100%;
   background-color: #fdf5e6;
-  min-height: 150px;
+  min-height: 15vw;
   padding: 10px 10px;
   opacity: .7;
 }
 
 .run-buddy {
   background-image: url(./images/run-buddy-screenshot.png);
-  background-position: center;
+  background-position: absolute;
 }
 
 .horiseon {
@@ -187,28 +201,100 @@ header nav ul li a:hover {
 .contact-me {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 0 0 50px;
-  /* text-align:left; */
-  /* flex-wrap: wrap; */
   padding: 50px;
 }
 
-.contact-me h2 {
-  /* flex: 0 0 20%; */
-  /* align-self: center; */
-  /* text-align: center; */
-}
-
 .contact-me ul {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   list-style: none;
 }
 
 .contact-me a {
   text-decoration: none;
   color: #272c18;
+}
+
+/* media queries */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me img {
+    max-width: 600px;
+    margin: 20px;
+  }
+
+  .work {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .work h2 {
+    padding-bottom: 20px;
+  }
+
+  .grid-container {
+    width: 100%;
+  }
+
+  .grid-container h3 {
+    font-size: 2vw;
+  }
+
+  .contact-me {
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    max-height: 30vw;
+  }
+
+  .about-me div {
+    overflow: hidden;
+  }
+
+  .about-me img {
+    margin: 20px 0 0 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me p {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .hero {
+    max-height: 0vw;
+  }
+
 }
