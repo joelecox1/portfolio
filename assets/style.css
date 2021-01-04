@@ -33,7 +33,6 @@ header {
   background-position: 80%;
   z-index: 9999;
   padding: 20px 35px;
-  /* background-color: #7b7766; */
 }
 
 header h1 {
@@ -176,15 +175,18 @@ header nav ul li a:hover {
 
 .run-buddy {
   background-image: url(./images/run-buddy-screenshot.png);
-  background-position: absolute;
+  background-size: 75vw;
 }
 
 .horiseon {
   background-image: url(./images/horiseon-screenshot.png);
+  background-size: 40vw;
 }
 
 .pw-gen {
   background-image: url(./images/pw-gen.png);
+  background-size: 40vw;
+
 }
 
 .grid-item:first-child {
@@ -248,23 +250,14 @@ header nav ul li a:hover {
     margin: 20px;
   }
 
-  .work {
-    flex-direction: column;
-    padding: 50px;
-  }
-
   .work h2 {
     padding-bottom: 20px;
   }
 
-  .grid-container {
-    width: 100%;
-  }
-
-  .grid-container h3 {
+  .grid-item h3 {
     font-size: 2vw;
   }
-
+  
   .contact-me {
     padding: 20px;
     margin: 0;
@@ -295,6 +288,4 @@ header nav ul li a:hover {
   .hero {
     max-height: 0vw;
   }
-
-  
 }
