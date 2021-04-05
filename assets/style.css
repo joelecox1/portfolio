@@ -176,17 +176,20 @@ header nav ul li a:hover {
 .crypto-stock {
   background-image: url(./images/screenshot-crypto-stock.png);
   background-size: 75vw;
+  background-size: cover;
+
 }
 
-.horiseon {
-  background-image: url(./images/horiseon-screenshot.png);
+.rockfit {
+  background-image: url(./images/dashboard-screenshot.png);
   background-size: 40vw;
+  background-size: cover;
 }
 
 .pw-gen {
   background-image: url(./images/pw-gen.png);
   background-size: 40vw;
-
+  background-size: cover;
 }
 
 .grid-item:first-child {
